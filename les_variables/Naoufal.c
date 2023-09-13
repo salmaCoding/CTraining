@@ -11,6 +11,21 @@ char sexe='M';
 printf("\n%s  %s \n ",nom,prenom);
 printf("\nage=%d,poid=%f,size=%f,sexe=%c\n",age,poid,size,sexe);
 
+float nt1,nt2,nt3,nt4,som=0;
+
+printf("entrer  note de 4 matieres");
+scanf("%f , %f , %f , %f",&nt1,&nt2,&nt3,&nt4);
+som=(nt1+nt2+nt3+nt4)/4;
+if(som>=10){
+	printf("validé");
+	
+}else if(som>6){
+	printf("ratrappage");
+}else{
+	printf("a referer");
+}
+
+
 
 
 
