@@ -1,4 +1,6 @@
-pull: fetch
-	@git pull
-fetch: 
-	@git fetch
+push: commit
+	git push
+commit: add
+	git commit -m "$(M)"
+add:
+	git add .
