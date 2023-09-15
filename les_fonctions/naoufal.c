@@ -2,12 +2,12 @@
 
 int main()
 {
- /* Prototypes des fonctions appelées /
+ /* Prototypes des fonctions appelées */
  double MIN(double X, double Y);
  double MAX(double X, double Y);
- / Variables locales /
+ /* Variables locales */
  double A,B,C,D;
- / Traitements */
+ /* Traitements */
  printf("Introduire 4 réels : ");
  scanf("%lf %lf %lf %lf", &A, &B, &C, &D);
  printf("Le minimum des 4 reels est %f \n",
