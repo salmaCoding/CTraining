@@ -27,46 +27,55 @@ typedef struct{
 }Etudiant;
 
 int main(){
-	//challenge 1
-//	Personne pers;
-//	printf("donner le nom du personne :");
-//	scanf("%s",pers.nom);
-//	printf("donner son age :");
-//	scanf("%d",&pers.age);
-//	//Affichage	
-//	printf("------------------");
-//     printf("le nom du personne est :%s\n",pers.nom);
-//	printf("l age du personne est :%d\n",pers.age);
 	
-	//challenge 2
+	int a ;
+	printf("entrer le nombre de challenge de 1 jusqu a 3:");
+	scanf("%d",&a);
+	switch(a){
+		case 1:	//challenge 1
+	Personne pers;
+	printf("donner le nom du personne :");
+	scanf("%s",pers.nom);
+	printf("donner son age :");
+	scanf("%d",&pers.age);
+	//Affichage	
+	printf("------------------\n");
+    printf("votre nom est :%s\n",pers.nom);
+	printf("ton age est :%d\n",pers.age);
+        break ;
+        
+    case 2:
+    			//challenge 2
 	
-//	Point p1,p2;
-//	printf("donner la distance du point1 :");
-//	scanf("%d %d",&p1.x,&p1.y);
-//		printf("donner la distance du point2 :");
-//	scanf("%d	%d",&p2.x,&p2.y);	
-//	printf("la distance euclidienne est:\n");
-//	 int dist=sqrt((p2.x-p1.x)^2+(p2.y-p1.y)^2);
-//	 printf("%d",dist);
+	Point p1,p2;
+	printf("donner la distance du point1 :");
+	scanf("%d %d",&p1.x,&p1.y);
+		printf("donner la distance du point2 :");
+	scanf("%d	%d",&p2.x,&p2.y);	
+	printf("la distance euclidienne est:\n");
+	 int dist=sqrt((p2.x-p1.x)^2+(p2.y-p1.y)^2);
+	 	 printf("%d",dist);
+        break;
+    
+	case 3:
 
-     //challenge 3
+	Employe emp;
+	printf("donner le nom de l'employe :");
+	scanf("%s",emp.nom);
+		printf("donner son salaire horaire :");
+	scanf("%f",&emp.salaireHor);
 	
-//	Employe emp;
-//	printf("donner le nom de l'employe :");
-//	scanf("%s",emp.nom);
-//		printf("donner son salaire horaire :");
-//	scanf("%f",&emp.salaireHor);
-//	
-//		printf("donner le nombre d heures de travaille :");
-//	scanf("%d",&emp.nbrHeures);
-//	
-//	//affichage
-//	emp.salaireT=emp.nbrHeures*emp.salaireHor;
-//	printf("le nom de l employe %s ",emp.nom);
-//	printf("son salaire total est %.2f",emp.salaireT);
-//	
-	//challenge 4
-Etudiant Et[5];
+		printf("donner le nombre d heures de travaille :");
+	scanf("%d",&emp.nbrHeures);
+	
+	//affichage
+	emp.salaireT=emp.nbrHeures*emp.salaireHor;
+	printf("le nom de l employe %s ",emp.nom);
+	printf("son salaire total est %.2f",emp.salaireT);
+           break;
+    
+    case 4:
+    	Etudiant Et[5];
 int i;
 for(i=0;i<5;i++){
 	printf("donner le nom de l etudiant %d: ",i+1);
@@ -82,17 +91,6 @@ for(i=0;i<5;i++){
 	for(i=0;i<5;i++){
 		printf("%d.Nom:%s  age:%d \n",i+1,Et[i].nom,Et[i].age);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	 break;
+	}
 }
